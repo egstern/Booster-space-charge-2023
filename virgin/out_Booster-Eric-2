@@ -1,0 +1,189 @@
+
+  ++++++++++++++++++++++++++++++++++++++++++++
+  +      MADX-SC 2.02.00  (64 bit, Linux)    +
+  + Based on MAD-X 5.02.07 from 19.09.2016   +
+  + Best effort help: frank.schmidt@cern.ch  +
+  + Release   date: 2021.03.25               +
+  + Execution date: 2023.06.06 11:48:37      +
+  ++++++++++++++++++++++++++++++++++++++++++++
+ option, -echo, warn, info;
+
+START MATCHING
+
+number of sequences: 1
+sequence name: machine
+number of variables:    2
+user given constraints: 1
+total constraints:      2
+
+START LMDIF:
+
+Initial Penalty Function =   0.63026132E+01
+
+
+call:       4   Penalty function =   0.31841202E+01
+call:       7   Penalty function =   0.13070173E+00
+call:      10   Penalty function =   0.61296791E-06
+call:      13   Penalty function =   0.65633570E-17
+ ++++++++++ LMDIF ended: converged successfully
+call:      13   Penalty function =   0.65633570E-17
+number of variables:    2
+user given constraints: 1
+total constraints:      2
+
+START JACOBIAN:
+
+ JACOBIAN Strategy =           3
+Initial Penalty Function =   0.6563356954197039E-17
+
+
+ Solve system with            2 con,           2 var
+ Rank             2   Condition number    2.03541499846105     
+ Step length   8.700869713655310E-010
+call:     2 Dx =   0.87008697E-09  Penalty function =  0.7651950780643815E-26
+ ++++++++++ JACOBIAN ended: converged successfully
+ Final difference norm:  9.010232374007525E-005
+
+MATCH SUMMARY
+
+Node_Name                  Constraint   Type  Target Value       Final Value        Penalty
+--------------------------------------------------------------------------------------------------
+Global constraint:         q1           4     6.60000000E+00     6.60000000E+00     6.38977333E-27
+Global constraint:         q2           4     6.65000000E+00     6.65000000E+00     1.26217745E-27
+
+
+Final Penalty Function =   7.65195078e-27
+
+
+
+
+
+Variable                 Final Value  Initial Value Lower Limit  Upper Limit 
+--------------------------------------------------------------------------------
+i_dql                     7.93963e+00  0.00000e+00 -1.00000e+20  1.00000e+20
+i_dqs                    -4.90125e+00  0.00000e+00 -1.00000e+20  1.00000e+20
+
+END MATCH SUMMARY
+
+VARIABLE "TAR" SET TO   7.65195078e-27
+START MATCHING
+
+number of sequences: 1
+sequence name: machine
+command: beam  module: control
+parameter: particle   string: proton
+parameter: sequence   string: default_beam
+parameter: bunched   logical: true
+parameter: radiate   logical: false
+parameter: mass   double value:  9.382720460000000262113e-01
+parameter: charge   double value:  1.000000000000000000000e+00
+parameter: energy   double value:  1.353543422829672548957e+00
+parameter: pc   double value:  9.755641266367063302312e-01
+parameter: gamma   double value:  1.442591654094395270391e+00
+parameter: beta   double value:  7.207483041786901800663e-01
+parameter: brho   double value:  3.254131652093483317856e+00
+parameter: ex   double value:  1.000000000000000000000e+00
+parameter: exn   double value:  1.039745488310866994297e+00
+parameter: ey   double value:  1.000000000000000000000e+00
+parameter: eyn   double value:  1.039745488310866994297e+00
+parameter: et   double value:  1.000000000000000000000e+00
+parameter: sigt   double value:  0.000000000000000000000e+00
+parameter: sige   double value:  0.000000000000000000000e+00
+parameter: kbunch   double value:  1.000000000000000000000e+00
+parameter: npart   double value:  0.000000000000000000000e+00
+parameter: bcurrent   double value:  0.000000000000000000000e+00
+parameter: freq0   double value:  4.556582752482986053977e-01
+parameter: circ   double value:  4.742038440788045363661e+02
+parameter: dtbyds   double value:  0.000000000000000000000e+00
+parameter: deltap   double value:  0.000000000000000000000e+00
+parameter: alfa   double value:  4.805218820235422350073e-01
+parameter: u0   double value:  0.000000000000000000000e+00
+parameter: qs   double value:  0.000000000000000000000e+00
+parameter: arad   double value:  1.534698269210202573546e-18
+parameter: bv   double value:  1.000000000000000000000e+00
+parameter: pdamp   double array: 1.000000e+00 1.000000e+00 2.000000e+00 
+parameter: n1min   double value: -1.000000000000000000000e+00
+number of variables:    2
+user given constraints: 1
+total constraints:      2
+
+START LMDIF:
+
+Initial Penalty Function =   0.53859496E+02
+
+
+call:       4   Penalty function =   0.38849935E+02
+call:       7   Penalty function =   0.16891304E+02
+call:      10   Penalty function =   0.25530644E+00
+call:      13   Penalty function =   0.20710432E-18
+ ++++++++++ LMDIF ended: converged successfully
+call:      13   Penalty function =   0.20710432E-18
+number of variables:    2
+user given constraints: 1
+total constraints:      2
+
+START JACOBIAN:
+
+ JACOBIAN Strategy =           3
+Initial Penalty Function =   0.2071043196167246E-18
+
+
+ Solve system with            2 con,           2 var
+ Rank             2   Condition number    3.20917261051878     
+ Step length   1.193629904995042E-010
+call:     2 Dx =   0.11936299E-09  Penalty function =  0.1464125840090198E-26
+ ++++++++++ JACOBIAN ended: converged successfully
+ Final difference norm:  1.041513342364996E-005
+
+MATCH SUMMARY
+
+Node_Name                  Constraint   Type  Target Value       Final Value        Penalty
+--------------------------------------------------------------------------------------------------
+Global constraint:         dq1          4    -1.66493628E+01    -1.66493628E+01     1.26217745E-27
+Global constraint:         dq2          4    -8.32468140E+00    -8.32468140E+00     2.01948392E-28
+
+
+Final Penalty Function =   1.46412584e-27
+
+
+
+
+
+Variable                 Final Value  Initial Value Lower Limit  Upper Limit 
+--------------------------------------------------------------------------------
+i_dsxl                   -2.46025e-02  0.00000e+00 -1.00000e+20  1.00000e+20
+i_dsxs                    9.08449e-01  0.00000e+00 -1.00000e+20  1.00000e+20
+
+END MATCH SUMMARY
+
+VARIABLE "TAR" SET TO   1.46412584e-27
+enter Twiss module
+  
+iteration:   1 error:   0.000000E+00 deltap:   0.000000E+00
+orbit:   0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+
+++++++ table: summ
+
+                      length                       orbit5                         alfa                      gammatr 
+ 4.742038440788001025794e+02 -0.000000000000000000000e+00  3.786037075579967714489e-02  5.139342588511751408475e+00 
+
+                          q1                          dq1                      betxmax                        dxmax 
+ 6.599999999999991651123e+00 -1.664936279478903458084e+01  4.103267913929011001528e+01  5.270871908806454619878e+00 
+
+                       dxrms                       xcomax                       xcorms                           q2 
+ 3.672275174626699278946e+00  0.000000000000000000000e+00  0.000000000000000000000e+00  6.650000000000003907985e+00 
+
+                         dq2                      betymax                        dymax                        dyrms 
+-8.324681397394520843136e+00  2.564359581227598994246e+01  5.504318527822853190923e-02  9.615099715379774730772e-03 
+
+                      ycomax                       ycorms                       deltap                      synch_1 
+ 0.000000000000000000000e+00  0.000000000000000000000e+00  0.000000000000000000000e+00  0.000000000000000000000e+00 
+
+                     synch_2                      synch_3                      synch_4                      synch_5 
+ 0.000000000000000000000e+00  0.000000000000000000000e+00  0.000000000000000000000e+00  0.000000000000000000000e+00 
+
+  Number of warnings: 0
+
+  ++++++++++++++++++++++++++++++++++++++++++++
+  +          MAD-X finished normally         +
+  ++++++++++++++++++++++++++++++++++++++++++++
